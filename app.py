@@ -8,15 +8,18 @@ load_dotenv()
 app = Flask(__name__)
 
 # MYSQL CONFIG
-db = mysql.connector.connect(
-    host=os.getenv("DB_HOST"),
-    user=os.getenv("DB_USER"),
-    password =os.getenv("DB_PASSWORD"),
-    database=os.getenv("DB_NAME"),
-    port=3306
-)
+try:
+    db = mysql.connector.connect(
+        host=os.getenv("DB_HOST"),
+        user=os.getenv("DB_USER"),
+        password=os.getenv("DB_PASSWORD"),
+        database=os.getenv("DB_NAME")
+    )
+    cursor = db.cursor()
+except:
+    db = None
+    cursor = None
 
-cursor = db.cursor()
 
 @app.route("/", methods=["GET"])
 def home():
