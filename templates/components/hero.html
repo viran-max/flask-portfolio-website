@@ -1,0 +1,29 @@
+<section class="hero" id="hero">
+  <div class="container hero-content">
+    <!-- LEFT CONTENT -->
+    <div class="hero-text">
+      <h1>Hi, I'm <span>Berain</span></h1>
+
+      <p class="subtitle">A Passionate <span>Web Developer</span> & Learner</p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-outline">Contact Me</a>
+      </div>
+    </div>
+
+    <!-- RIGHT CONTENT -->
+    <div class="hero-visual">
+      <img
+        src="{{ url_for('static', filename='images/first.jpeg') }}"
+        alt="Profile Image"
+        class="hero-img"
+      />
+    </div>
+  </div>
+
+  <!-- Scroll Indicator -->
+  <div class="scroll-indicator">
+    <span></span>
+  </div>
+</section>

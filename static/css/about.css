@@ -1,0 +1,60 @@
+/* =====================
+   ABOUT SECTION
+===================== */
+
+.about {
+    background: var(--bg-light);
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+/* TEXT */
+.about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.about-text span {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+/* IMAGE */
+.about-image {
+    height: 350px;
+    border-radius: var(--border-radius);
+    background: linear-gradient(
+        135deg,
+        var(--accent),
+        transparent
+    );
+    opacity: 0.25;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .about-image {
+        display: none;
+    }
+}
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}

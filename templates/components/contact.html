@@ -1,0 +1,37 @@
+<section class="contact" id="contact">
+    <div class="container reveal">
+
+        <h2 class="section-title">Contact Me</h2>
+        <p class="section-subtitle">
+            Feel free to reach out for collaboration or queries
+        </p>
+
+        <form class="contact-form" method="POST" action="/contact">
+
+            <div class="form-group">
+                <input type="text" name="name" required>
+                <label>Your Name</label>
+            </div>
+
+            <div class="form-group">
+                <input type="email" name="email" required>
+                <label>Email Address</label>
+            </div>
+
+            <div class="form-group">
+                <textarea name="message" rows="5" required></textarea>
+                <label>Your Message</label>
+            </div>
+
+            <button type="submit" class="btn-primary">
+                Send Message
+            </button>
+
+            <!-- Success / error message -->
+            {% if success %}
+                <p class="success-msg">Message sent successfully!</p>
+            {% endif %}
+
+        </form>
+    </div>
+</section>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Portfolio | Berain</title>
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/base.css') }}"
+    />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/navbar.css') }}"
+    />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/hero.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/skills.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/projects.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css') }}">
+
+
+
+
+    <!-- JS -->
+    <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
+    <script
+      src="{{ url_for('static', filename='js/navbar.js') }}"
+      defer
+    ></script>
+    <script src="{{ url_for('static', filename='js/animations.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='js/projects.js') }}" defer></script>
+
+  </head>
+  <body>
+    {% block content %} {% endblock %}
+  </body>
+</html>

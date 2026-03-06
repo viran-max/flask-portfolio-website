@@ -1,0 +1,40 @@
+<section class="about" id="about">
+  <div class="container about-content reveal">
+    <!-- LEFT -->
+    <div class="about-text">
+      <h2>About Me</h2>
+
+      <p>
+        I am a fresher web developer passionate about building modern,
+        responsive, and user-friendly web applications. I enjoy learning new
+        technologies and improving my skills by working on real-world projects.
+      </p>
+
+      <p>
+        Currently focused on <span>HTML, CSS, JavaScript</span> and exploring
+        <span>Flask & Backend Development</span>.
+      </p>
+
+      <a
+        href="{{ url_for('static', filename='resume/RESUME.pdf') }}"
+        class="btn-primary"
+        download
+      >
+        Download Resume ⬇️
+      </a>
+      <a
+        href="{{ url_for('static', filename='resume/RESUME.pdf') }}"
+        class="btn-primary"
+        target="_blank"
+      >
+        View Resume
+      </a>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="about-image">
+      <!-- Image placeholder -->
+      <!-- <img src="" alt="about image"> -->
+    </div>
+  </div>
+</section>

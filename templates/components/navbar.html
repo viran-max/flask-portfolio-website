@@ -1,0 +1,29 @@
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <!-- LOGO -->
+    <div class="logo">
+      <a href="#hero">
+        <img
+          src="{{ url_for('static', filename='images/image.png') }}"
+          alt="Portfolio Logo"
+          class="logo-img"
+        />
+      </a>
+    </div>
+
+    <!-- NAV LINKS -->
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact" class="btn-accent">Contact</a></li>
+    </ul>
+
+    <!-- MOBILE MENU ICON -->
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</nav>

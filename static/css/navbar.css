@@ -1,0 +1,119 @@
+/* =====================
+   NAVBAR STYLES
+===================== */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    background: rgba(15, 15, 15, 0.6);
+    transition: var(--transition);
+}
+
+.navbar.scrolled {
+    background: rgba(15, 15, 15, 0.9);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+/* Logo image */
+.logo-img {
+    height: 40px;
+    width: auto;
+    filter: saturate(0.85) brightness(1.05);
+    transition: var(--transition);
+}
+
+.logo-img:hover {
+    filter: saturate(1) brightness(1.1);
+    transform: scale(1.05);
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    padding: 6px 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8px);
+    transition: var(--transition);
+    border: 1px solid rgba(0, 255, 213, 0.25);
+}
+
+.logo a:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: var(--transition);
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+.btn-accent {
+    padding: 8px 18px;
+    border-radius: var(--border-radius);
+    background: var(--accent);
+    color: #000 !important;
+    font-weight: 600;
+}
+
+/* MOBILE MENU */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background: var(--text-primary);
+    margin: 4px 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: var(--bg-light);
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}

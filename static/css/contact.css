@@ -1,0 +1,66 @@
+/* =====================
+   CONTACT SECTION
+===================== */
+
+.contact {
+    background: var(--bg-dark);
+}
+
+/* FORM */
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+}
+
+/* INPUT GROUP */
+.form-group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 14px 12px;
+    background: transparent;
+    border: 1px solid #333;
+    color: var(--text-primary);
+    border-radius: var(--border-radius);
+    outline: none;
+    font-size: 1rem;
+}
+
+.form-group label {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: var(--transition);
+    background: var(--bg-dark);
+    padding: 0 6px;
+}
+
+/* FLOAT LABEL */
+.form-group input:focus + label,
+.form-group input:valid + label,
+.form-group textarea:focus + label,
+.form-group textarea:valid + label {
+    top: -8px;
+    font-size: 0.75rem;
+    color: var(--accent);
+}
+
+/* BUTTON */
+.contact-form button {
+    margin-top: 10px;
+}
+
+/* SUCCESS MSG */
+.success-msg {
+    margin-top: 20px;
+    color: var(--accent);
+    font-size: 0.9rem;
+}
