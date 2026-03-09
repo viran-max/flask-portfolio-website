@@ -57,24 +57,10 @@
     text-decoration: none;
     font-weight: 600;
     transition: var(--transition);
+    
 }
 
 .btn-primary:hover {
-    background: var(--accent-hover);
-}
-/* btn-primary-about effect*/
-.btn-primary-about {
-    padding: 12px 30px;
-    background: var(--accent);
-    color: #000;
-    border-radius: var(--border-radius);
-    text-decoration: none;
-    font-weight: 600;
-    transition: var(--transition);
-    margin-right:5%;
-}
-
-.btn-primary-about:hover {
     background: var(--accent-hover);
 }
 
@@ -210,4 +196,5 @@
         radial-gradient(circle at 80% 60%, rgba(0, 255, 213, 0.06), transparent 40%);
     pointer-events: none;
 }
+
 

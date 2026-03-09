@@ -15,20 +15,23 @@
         <span>Flask & Backend Development</span>.
       </p>
 
-      <a
-        href="{{ url_for('static', filename='resume/RESUME.pdf') }}"
-        class="btn-primary-about"
-        download
-      >
-        Download Resume ⬇️
-      </a>
-      <a
-        href="{{ url_for('static', filename='resume/RESUME.pdf') }}"
-        class="btn-outline"
-        target="_blank"
-      >
-        View Resume
-      </a>
+      <div class="about-buttons">
+        <a
+          href="{{ url_for('static', filename='resume/RESUME.pdf') }}"
+          class="btn-primary-about"
+          download
+        >
+          Download Resume ⬇️
+        </a>
+
+        <a
+          href="{{ url_for('static', filename='resume/RESUME.pdf') }}"
+          class="btn-outline-about"
+          target="_blank"
+        >
+          View Resume
+        </a>
+      </div>
     </div>
 
     <!-- RIGHT -->
