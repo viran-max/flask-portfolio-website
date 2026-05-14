@@ -85,9 +85,9 @@
     background: radial-gradient(
         circle at top,
         var(--accent),
-        transparent 60%
+        transparent 20%
     );
-    opacity: 0.3;
+    opacity: 0.8;
     animation: float 6s ease-in-out infinite;
 }
 
