@@ -1,5 +1,6 @@
 <section class="about" id="about">
   <div class="container about-content reveal">
+
     <!-- LEFT -->
     <div class="about-text">
       <h2>About Me</h2>
@@ -36,8 +37,12 @@
 
     <!-- RIGHT -->
     <div class="about-image">
-      <!-- Image placeholder -->
-      <!-- <img src="" alt="about image"> -->
+      <img
+        src="{{ url_for('static', filename='images/first.png') }}"
+        alt="Profile Image"
+        class="about-img"
+      />
     </div>
+
   </div>
 </section>

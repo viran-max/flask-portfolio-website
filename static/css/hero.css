@@ -80,7 +80,7 @@
 
 /* VISUAL */
 .hero-visual {
-    height: 350px;
+    height: 450px;
     border-radius: 50%;
     background: radial-gradient(
         circle at top,
@@ -153,9 +153,8 @@
 /* VISUAL IMAGE CONTAINER */
 .hero-visual {
     width: 100%;
-    max-width: 380px;          /* controls size */
-    aspect-ratio: 1 / 1;      /* perfect square */
-    border-radius: 50%;       /* circular image */
+    max-width: 480px;          
+    aspect-ratio: 1 / 1;    
     overflow: hidden;
     margin-left: auto;
     background: rgba(255, 255, 255, 0.04);
@@ -169,7 +168,7 @@
 .hero-img {
     width: 150%;
     height: 150%;
-    object-fit: cover;        /* THIS IS THE KEY */
+    object-fit: cover;   
 }
 .hero-visual {
     position: relative;
