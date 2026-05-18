@@ -1,45 +1,54 @@
 from flask import Flask, render_template, request
-import mysql.connector
-import os
+from flask_mail import Mail, Message
 from dotenv import load_dotenv
-load_dotenv() 
+import os
 
+load_dotenv()
 
 app = Flask(__name__)
 
-# MYSQL CONFIG
-try:
-    db = mysql.connector.connect(
-        host=os.getenv("DB_HOST"),
-        user=os.getenv("DB_USER"),
-        password=os.getenv("DB_PASSWORD"),
-        database=os.getenv("DB_NAME")
-    )
-    cursor = db.cursor()
-except:
-    db = None
-    cursor = None
+app.config['MAIL_SERVER'] = os.getenv("MAIL_SERVER")
+app.config['MAIL_PORT'] = int(os.getenv("MAIL_PORT"))
 
+app.config['MAIL_USE_TLS'] = True
 
-@app.route("/", methods=["GET"])
+app.config['MAIL_USERNAME'] = os.getenv("MAIL_USERNAME")
+app.config['MAIL_PASSWORD'] = os.getenv("MAIL_PASSWORD")
+
+app.config['MAIL_DEFAULT_SENDER'] = os.getenv("MAIL_DEFAULT_SENDER")
+
+mail = Mail(app)
+
+@app.route("/")
 def home():
     return render_template("index.html")
 
 @app.route("/contact", methods=["POST"])
 def contact():
+
     name = request.form.get("name")
     email = request.form.get("email")
     message = request.form.get("message")
 
-    # insert into DB
-    sql = """
-        INSERT INTO contacts (name,email,message)
-        VALUES (%s, %s, %s)
-    """
-    values = (name,email,message)
+    # Create Email
+    msg = Message(
+        subject=f"New Portfolio Message from {name}",
+        recipients=["verain.k1801@gmail.com"]
+    )
 
-    cursor.execute(sql,values)
-    db.commit()
+    msg.body = f"""
+You received a new portfolio message.
+
+Name: {name}
+
+Email: {email}
+
+Message:
+{message}
+"""
+
+    # Send Mail
+    mail.send(msg)
 
     return render_template("index.html", success=True)
 

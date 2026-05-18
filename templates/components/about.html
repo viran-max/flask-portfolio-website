@@ -3,23 +3,63 @@
 
     <!-- LEFT -->
     <div class="about-text">
-      <h2>About Me</h2>
+
+      <p class="about-tag">💫 About Me</p>
+
+      <h2>
+        If it doesn’t make sense,
+        <span>I rebuild it until it does.</span>
+      </h2>
 
       <p>
-        I am a fresher web developer passionate about building modern,
-        responsive, and user-friendly web applications. I enjoy learning new
-        technologies and improving my skills by working on real-world projects.
+        Hello, I'm <span>Viran</span>.
+        I’m currently focused on backend development, building systems
+        that are reliable, predictable, and logically clear.
       </p>
 
       <p>
-        Currently focused on <span>HTML, CSS, JavaScript</span> and exploring
-        <span>Flask & Backend Development</span>.
+        I don’t move forward with code until I understand what’s happening underneath.
+        If something feels unclear, I question it, break it down,
+        and rebuild it until the logic holds without confusion.
+      </p>
+
+      <p>
+        This mindset is the foundation I’m using to move toward
+        <span>AI/ML</span>, where understanding systems matters more
+        than just using them.
+      </p>
+
+      <!-- POINTS -->
+      <div class="about-points">
+
+        <div class="point">
+          ✓ Building backend projects that reflect understanding, not repetition
+        </div>
+
+        <div class="point">
+          ✓ Breaking down concepts until they’re simple enough to stay
+        </div>
+
+        <div class="point">
+          ✓ Reworking fundamentals to remove hidden confusion
+        </div>
+
+        <div class="point">
+          ✓ Choosing depth and clarity over speed and shortcuts
+        </div>
+
+      </div>
+
+      <p class="about-ending">
+        I’m not trying to learn everything at once.
+        I’m building a base strong enough to support what comes next.
       </p>
 
       <div class="about-buttons">
+
         <a
           href="{{ url_for('static', filename='resume/RESUME.pdf') }}"
-          class="btn-primary-about"
+          class="btn-primary"
           download
         >
           Download Resume ⬇️
@@ -27,21 +67,24 @@
 
         <a
           href="{{ url_for('static', filename='resume/RESUME.pdf') }}"
-          class="btn-outline-about"
+          class="btn-outline"
           target="_blank"
         >
           View Resume
         </a>
+
       </div>
     </div>
 
     <!-- RIGHT -->
     <div class="about-image">
+
       <img
         src="{{ url_for('static', filename='images/first.png') }}"
         alt="Profile Image"
         class="about-img"
       />
+
     </div>
 
   </div>

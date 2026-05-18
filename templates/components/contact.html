@@ -1,37 +1,97 @@
 <section class="contact" id="contact">
+
     <div class="container reveal">
 
-        <h2 class="section-title">Contact Me</h2>
+        <p class="contact-tag">📩 Contact</p>
+
+        <h2 class="section-title">
+            Let’s Build Something
+            <span>Together</span>
+        </h2>
+
         <p class="section-subtitle">
-            Feel free to reach out for collaboration or queries
+            Open to collaboration, projects, learning,
+            and meaningful developer conversations.
         </p>
 
-        <form class="contact-form" method="POST" action="/contact">
+        <div class="contact-wrapper">
 
-            <div class="form-group">
-                <input type="text" name="name" required>
-                <label>Your Name</label>
+            <!-- LEFT INFO -->
+            <div class="contact-info">
+
+                <h3>Get In Touch</h3>
+
+                <p>
+                    Whether it's a project, idea,
+                    collaboration, or just a tech discussion —
+                    feel free to reach out.
+                </p>
+
+                <div class="contact-items">
+
+                    <div class="contact-item">
+                        <span>Email</span>
+                        <p>verain.k1801@gmail.com</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <span>Location</span>
+                        <p>jalandhar Punjab, India</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <span>Status</span>
+                        <p>Currently Learning Backend & AI/ML</p>
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="form-group">
-                <input type="email" name="email" required>
-                <label>Email Address</label>
-            </div>
+            <!-- RIGHT FORM -->
+            <form class="contact-form" method="POST" action="/contact">
 
-            <div class="form-group">
-                <textarea name="message" rows="5" required></textarea>
-                <label>Your Message</label>
-            </div>
+                <div class="form-group">
 
-            <button type="submit" class="btn-primary">
-                Send Message
-            </button>
+                    <input type="text" name="name" required>
+                    <label>Your Name</label>
 
-            <!-- Success / error message -->
-            {% if success %}
-                <p class="success-msg">Message sent successfully!</p>
-            {% endif %}
+                </div>
 
-        </form>
+                <div class="form-group">
+
+                    <input type="email" name="email" required>
+                    <label>Email Address</label>
+
+                </div>
+
+                <div class="form-group">
+
+                    <textarea name="message" rows="6" required></textarea>
+                    <label>Your Message</label>
+
+                </div>
+
+                <button type="submit" class="btn-primary send-btn">
+
+                    <span class="btn-text">Send Message</span>
+
+                    <span class="btn-loading">
+                        Sending...
+                    </span>
+
+                </button>
+
+                {% if success %}
+                    <div class="success-popup">
+                        Message sent successfully ✓
+                    </div>
+                {% endif %}
+
+            </form>
+
+        </div>
+
     </div>
+
 </section>
