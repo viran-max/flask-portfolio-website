@@ -161,7 +161,7 @@ MAIL_PASSWORD=your_app_password
 # ▶️ Run Project
 
 ```bash
-python app.py
+flask run
 ```
 
 Open:
