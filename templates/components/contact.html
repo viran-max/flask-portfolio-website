@@ -49,7 +49,7 @@
             </div>
 
             <!-- RIGHT FORM -->
-            <form class="contact-form" method="POST" action="/contact">
+            <form class="contact-form" id="contact-form">
 
                 <div class="form-group">
 
@@ -72,7 +72,7 @@
 
                 </div>
 
-                <button type="submit" class="btn-primary send-btn">
+                <button type="submit" class="btn-primary" id="submit-btn">
 
                     <span class="btn-text">Send Message</span>
 
@@ -81,13 +81,6 @@
                     </span>
 
                 </button>
-
-                {% if success %}
-                    <div class="success-popup">
-                        Message sent successfully ✓
-                    </div>
-                {% endif %}
-
             </form>
 
         </div>

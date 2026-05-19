@@ -120,3 +120,26 @@ section {
     color: #000;
     transform: translateY(-2px);
 }
+/* =====================
+   GLOBAL MOBILE BUTTON FIX
+===================== */
+
+@media (max-width: 600px) {
+
+    .btn-primary,
+    .btn-outline {
+        min-height: 50px;
+        width: 100%;
+    }
+
+    .about-buttons,
+    .hero-buttons,
+    .project-links {
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+}

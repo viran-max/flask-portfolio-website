@@ -1,44 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Portfolio | Berain</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- CSS -->
-    <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename='css/base.css') }}"
-    />
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+  <title>Portfolio | Berain</title>
 
-    <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename='css/navbar.css') }}"
-    />
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/hero.css') }}">
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/skills.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/navbar.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/hero.css') }}">
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/projects.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/skills.css') }}">
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/projects.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}">
 
 
 
 
-    <!-- JS -->
-    <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
-    <script
-      src="{{ url_for('static', filename='js/navbar.js') }}"
-      defer
-    ></script>
-    <script src="{{ url_for('static', filename='js/animations.js') }}" defer></script>
-    <script src="{{ url_for('static', filename='js/projects.js') }}" defer></script>
+  <!-- JS -->
+  <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
+  <script src="{{ url_for('static', filename='js/navbar.js') }}" defer></script>
+  <script src="{{ url_for('static', filename='js/animations.js') }}" defer></script>
+  <script src="{{ url_for('static', filename='js/projects.js') }}" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  
+  <script>
+    emailjs.init("1Dq4IV9GYsAdB6B2n");
+  </script>
+  <script src="{{ url_for('static', filename='js/contact.js') }}"></script>
+</head>
 
-  </head>
-  <body>
-    {% block content %} {% endblock %}
-  </body>
+<body>
+  {% block content %} {% endblock %}
+</body>
+
 </html>
