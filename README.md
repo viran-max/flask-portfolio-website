@@ -239,13 +239,13 @@ Currently exploring:
 # 🤝 Connect With Me
 
 ## GitHub
-Add your GitHub profile link
+[Add your GitHub profile link](https://github.com/viran-max)
 
-## LinkedIn
-Add your LinkedIn profile link
+[## LinkedIn
+Add your LinkedIn profile link](https://www.linkedin.com/in/viran-404b13358/)
 
 ## Email
-yourmail@example.com
+verain.k1801@gmail.com
 
 ---
 
@@ -261,11 +261,5 @@ If you liked this project:
 - Give it a star ⭐
 - Fork the repository
 - Share feedback
-
 ---
 
-# 💬 Final Note
-
-> “If something feels unclear, I break it down until it makes sense.”
-
-This portfolio represents my journey of learning by understanding, rebuilding, and improving systems step by step.
