@@ -6,32 +6,6 @@ This portfolio reflects my journey from frontend development toward backend engi
 
 ---
 
-# 🚀 Live Demo
-
-Add your deployed link here after deployment:
-
-```bash
-https://your-portfolio-link.onrender.com
-```
-
----
-
-# 📸 Preview
-
-Add screenshots inside:
-
-```bash
-/static/images/
-```
-
-Example:
-
-```md
-![Portfolio Preview](static/images/preview.png)
-```
-
----
-
 # ✨ Features
 
 - Modern responsive UI
@@ -62,8 +36,7 @@ Example:
 
 ## Python Libraries
 - Flask
-- python-dotenv
-- smtplib
+- EmailJS
 
 ## Deployment
 - Render
@@ -103,84 +76,14 @@ portfolio/
 
 ---
 
-# ⚙️ Installation & Setup
-
-## 1️⃣ Clone Repository
-
-```bash
-git clone https://github.com/your-username/your-repo-name.git
-```
-
----
-
-## 2️⃣ Navigate Into Project
-
-```bash
-cd your-repo-name
-```
-
----
-
-## 3️⃣ Create Virtual Environment
-
-### Windows
-
-```bash
-python -m venv venv
-venv\Scripts\activate
-```
-
-### Mac/Linux
-
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
-
----
-
-## 4️⃣ Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-# 🔐 Environment Variables
-
-Create a `.env` file in the root folder.
-
-```env
-MAIL_USERNAME=your_email@gmail.com
-MAIL_PASSWORD=your_app_password
-```
-
----
-
-# ▶️ Run Project
-
-```bash
-flask run
-```
-
-Open:
-
-```bash
-http://127.0.0.1:5000
-```
-
----
-
 # 📧 Contact Form System
 
-The portfolio includes an email-based contact system using Flask and SMTP.
+The portfolio includes an email-based contact system using EmialJS.
 
 When someone submits the contact form:
 - The message is sent directly to your email
 - No database is required
 - Secure credentials are stored using environment variables
-
 ---
 
 # 📱 Responsive Design
@@ -239,10 +142,10 @@ Currently exploring:
 # 🤝 Connect With Me
 
 ## GitHub
-[Add your GitHub profile link](https://github.com/viran-max)
+(https://github.com/viran-max)
 
 [## LinkedIn
-Add your LinkedIn profile link](https://www.linkedin.com/in/viran-404b13358/)
+(https://www.linkedin.com/in/viran-404b13358/)
 
 ## Email
 verain.k1801@gmail.com
